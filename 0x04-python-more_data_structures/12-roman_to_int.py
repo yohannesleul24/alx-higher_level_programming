@@ -16,8 +16,8 @@ def roman_to_int(roman_string):
         if not dict_r.get(roman_string[i], 0):
             return 0
         if (lenght != (i + 1) and
-            dict_r[roman_string[i + 1]] > dict_r[roman_string[i]]):
-           num += -dict_r[roman_string[i]]
+                dict_r[roman_string[i + 1]] > dict_r[roman_string[i]]):
+            num += -dict_r[roman_string[i]]
         else:
-           num += dict_r[roman_string[i]]
+            num += dict_r[roman_string[i]]
     return num
