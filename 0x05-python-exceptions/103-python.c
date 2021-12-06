@@ -1,10 +1,7 @@
-#include <Python.h>
-#include <object.h>
-#include <listobject.h>
-#include <bytesobject.h>
-#include <floatobject.h>
+#include <stdio.h>
 #include <stdlib.h>
-#include <float.h>
+#include <Python.h>
+#include <floatobject.h>
 void print_python_bytes(PyObject *p);
 void print_python_float(PyObject *p);
 /**
