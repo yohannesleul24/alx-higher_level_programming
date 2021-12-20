@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 """
-Geometry module
-
+Contains the class BaseGeometry
 """
 
 
-class BaseGeometry():
-    """class BaseGeometry"""
-
+class BaseGeometry:
+    """A class with public attribute area"""
     def area(self):
-        """Public instance method Raise Exception"""
-        raise Exception('area() is not implemented')
+        """raises an exception when called"""
+        raise Exception("area() is not implemented")
