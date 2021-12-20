@@ -1,16 +1,19 @@
 #!/usr/bin/python3
 """
-MyInt module
-
+Contains the class MyInt
 """
 
 
 class MyInt(int):
-    """subclass MyInt from class int"""
+    """rebel version of an integer, perfect for opposite day!"""
+    def __new__(cls, *args, **kwargs):
+        """create a new instance of the class"""
+        return super(MyInt, cls).__new__(cls, *args, **kwargs)
+
     def __eq__(self, other):
-        """Compare equal / different to other"""
-        return (int(self) != int(other))
+        """what was != is now =="""
+        return int(self) != other
 
     def __ne__(self, other):
-        """Compare equal / different to other"""
-        return (int(self) == int(other))
+        """what was == is now !="""
+        return int(self) == other
