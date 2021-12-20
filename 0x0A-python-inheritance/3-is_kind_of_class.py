@@ -1,9 +1,9 @@
 #!/usr/bin/python3
+"""
+Contains the is_kind_of_class function
+"""
+
+
 def is_kind_of_class(obj, a_class):
-    """Exact same object. True if the object is exactly an instance
-    of the specified class, otherwise False
-    Args:
-        obj:
-        a_class:
-    Return: True or False"""
-    return(isinstance(obj, a_class))
+    """True if obj is an instance or inherited from a_class, else False"""
+    return (isinstance(obj, a_class))
